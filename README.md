@@ -1,2 +1,2 @@
 # DBLearn
-Just test of my projects in SQL
+Just testing out my things SQL
