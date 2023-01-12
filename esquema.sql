@@ -3,7 +3,18 @@ USE PROCESSADORES_2023;
 
 CREATE TABLE cpus (
   id INT NOT NULL AUTO_INCREMENT,
-  model VARCHAR(255) NOT NULL,
-  PRIMARY KEY (id)
+  modelo VARCHAR(100) NOT NULL,
+  cores INT NOT NULL;
+  threads INT NOT NULL;
+  PRIMARY KEY (id);
 );
+
+CREATE TABLE familia (
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(30)
+  marca VARCHAR(30)
+  cpu_id INT NOT NULL;
+  PRIMARY KEY (id),
+  FOREIGN KEY (band_id) REFERENCES cpus(id)
+)
 
